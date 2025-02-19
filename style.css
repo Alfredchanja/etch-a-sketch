@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.container div{
+    flex: 1;
+    margin: 5px;
+    box-sizing: border-box;
+    height: 100px;
+    background-color: lightgray;
+}
