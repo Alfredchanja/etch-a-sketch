@@ -1,13 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2929;
+  columns: white;
+}
+
 .container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 100px ;
+  width: 640px;
 }
 
 .container div{
-    flex: 1;
-    margin: 5px;
-    box-sizing: border-box;
-    height: 100px;
-    background-color: lightgray;
+  flex: 0 0 calc(100% / 16);
+  margin: 0;
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid lightgray;
+}
+
+input {
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+button {
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  background-color: #4CAF50;
+  color: rgb(245, 218, 188);
 }
